@@ -19,4 +19,9 @@ Unit = {
 
   val voyagerDistance = BigDecimal(23234534545.3434)
   println("voyager distance is " + voyagerDistance)
+
+  // Binding 2 variables irrespective of type
+  var voyager1 = 3343.23
+  var voyager2 = 100.00
+  println(s" type all that i want because the next dollar concatenates ${voyager1 + voyager2}")
 }
