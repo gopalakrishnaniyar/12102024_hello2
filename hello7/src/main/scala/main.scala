@@ -33,7 +33,7 @@ Unit = {
   //execute2()
 
   // Predicate like loop with multiple gaurds, or WHERE Condition in SQL..lol
-  //[][] in xslt
+  //[][] in xslt.
   val myList32 = List(1,2,3,4)
   for i<- myList32
       if i<=4
