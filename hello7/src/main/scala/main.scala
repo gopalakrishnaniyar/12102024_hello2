@@ -1,7 +1,7 @@
 import scala.io.StdIn.readLine
 
 @main
-def popop():
+def execute():
 Unit = {
   val firstName = "John"
   val mi = 'C'
@@ -30,5 +30,15 @@ Unit = {
 
   val binary32 = if voyager1 < voyager2 then "A" else "B"
   println(binary32)
+  //execute2()
 
+  // Predicate like loop gaurds, or WHERE Condition in SQL..lol
+  val myLister = List(1,2,3,4)
+  for i<- myLister if i<=3
+      do println(i)
+
+}
+def execute2():
+Unit = {
+ println("test 32");
 }
