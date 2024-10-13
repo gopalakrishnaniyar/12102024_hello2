@@ -65,6 +65,7 @@ Unit = {
 
 
   executeParam("Gopala",2)
+  matchers(32)
 
 }
 def execute2():
@@ -79,4 +80,11 @@ Unit = {
   println("Hello " + i + " " + count)
   for k<- 0 to count do println("to" + i)
   for k<- 0 until count do println("Until" + i)
+}
+
+def matchers(i:Int):
+Unit = {
+  i match
+    case 1 => println("case 1 printing")
+    case _ => println("case Other printing")
 }
