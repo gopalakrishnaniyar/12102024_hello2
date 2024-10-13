@@ -67,6 +67,10 @@ Unit = {
   executeParam("Gopala",2)
   matchers(32)
 
+  // Call the method and print the result
+  val result = getClassAsString("Hello")
+  println(result) // This will print: 'Hello' is a String
+
 }
 def execute2():
 Unit = {
@@ -88,3 +92,10 @@ Unit = {
     case 1 => println("case 1 printing")
     case _ => println("case Other printing")
 }
+
+def getClassAsString(x: Matchable): String = x match
+  case s: String => s"'$s' is a String"
+  case i: Int => "Int"
+  case d: Double => "Double"
+  case l: List[?] => "List"
+  case _ => "Unknown"
