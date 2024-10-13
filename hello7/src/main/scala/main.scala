@@ -50,8 +50,33 @@ Unit = {
   val names = List("chris", "ed", "maurice")
   val capNames = for i <- names yield i.capitalize
   println(capNames)
+
+  val fruits = List("apple", "banana", "lime", "orange")
+  val holder = for i <- fruits if i.length > 5 yield i
+  println(holder)
+
+  //13.10.2024 switch like program match case
+  val i = "10"
+  i match
+    case "1" => println("I am One")
+    case "dfg" => println("I am Two")
+    case "10" => println("I am Two")
+    case _ => println("I am Other")
+
+
+  executeParam("Gopala",2)
+
 }
 def execute2():
 Unit = {
  println("test 32")
+}
+
+// to includes the upper bound 0 to 2 is 0,1,2 where 0 until 2 is 0,1
+// function with parameter
+def executeParam(i:String, count:Int):
+Unit = {
+  println("Hello " + i + " " + count)
+  for k<- 0 to count do println("to" + i)
+  for k<- 0 until count do println("Until" + i)
 }
