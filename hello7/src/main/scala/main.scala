@@ -32,10 +32,13 @@ Unit = {
   println(binary32)
   //execute2()
 
-  // Predicate like loop gaurds, or WHERE Condition in SQL..lol
-  val myLister = List(1,2,3,4)
-  for i<- myLister if i<=3
-      do println(i)
+  // Predicate like loop with multiple gaurds, or WHERE Condition in SQL..lol
+  //[][] in xslt
+  val myList32 = List(1,2,3,4)
+  for i<- myList32
+      if i<=4
+      if i % 2 != 0
+      do execute2()
 
 }
 def execute2():
