@@ -24,7 +24,7 @@ Unit = {
   var voyager1 = 3343.23
   var voyager2 = 100.00
   println(s" type all that i want because the next dollar concatenates ${voyager1 + voyager2}")
-
+ // Automatic type inference - wonderful.. but complexity increases..
   var binary = if voyager1 + voyager2 > 3500 then "sd" else false
   println(binary)
 }
