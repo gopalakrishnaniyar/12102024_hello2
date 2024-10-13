@@ -27,4 +27,8 @@ Unit = {
  // Automatic type inference - wonderful.. but complexity increases..
   var binary = if voyager1 + voyager2 > 3500 then "sd" else false
   println(binary)
+
+  val binary32 = if voyager1 < voyager2 then "A" else "B"
+  println(binary32)
+
 }
