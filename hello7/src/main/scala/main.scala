@@ -40,8 +40,18 @@ Unit = {
       if i % 2 != 0
       do execute2()
 
+  // write  a for loop with yield
+  val mylist2 = List(1,2,3,4)
+  val returner = for i<- mylist2 if i==2
+                 yield 1+1
+  println(returner)
+
+  //yields a list back to the val
+  val names = List("chris", "ed", "maurice")
+  val capNames = for i <- names yield i.capitalize
+  println(capNames)
 }
 def execute2():
 Unit = {
- println("test 32");
+ println("test 32")
 }
