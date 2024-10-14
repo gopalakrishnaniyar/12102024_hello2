@@ -2,6 +2,7 @@ import scala.io.StdIn.readLine
 import java.io.IOException  // Import IOException
 import scala.util.control.Breaks._
 
+
 @main
 def execute():
 Unit = {
@@ -120,9 +121,6 @@ Unit = {
   do
     println(xer)
     xer += 1
-
-
-
 
 
 }
