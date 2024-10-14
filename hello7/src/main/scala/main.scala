@@ -2,10 +2,13 @@ import scala.io.StdIn.readLine
 import java.io.IOException  // Import IOException
 import scala.util.control.Breaks._
 
+class Dog extends newTrain1:
+  override def startTail(): Unit = super.startTail()
 
 @main
 def execute():
 Unit = {
+
   val firstName = "John"
   val mi = 'C'
   val lastName = "Doe"
@@ -122,7 +125,7 @@ Unit = {
     println(xer)
     xer += 1
 
-
+  Dog().startTail()
 }
 def execute2():
 Unit = {

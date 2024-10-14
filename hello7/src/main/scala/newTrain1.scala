@@ -1,4 +1,3 @@
 trait newTrain1 :
-  def callAuthentication(): String
-    var url = "https://google.com"
+  def startTail(): Unit = println("tail is wagging")
 
