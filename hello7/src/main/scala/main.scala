@@ -1,4 +1,5 @@
 import scala.io.StdIn.readLine
+import java.io.IOException  // Import IOException
 
 @main
 def execute():
@@ -63,13 +64,55 @@ Unit = {
     case "10" => println("I am Two")
     case _ => println("I am Other")
 
+  var temp1 = 89.22
+  var result2 = temp1 match
+    case 90.22 => "get 43"
+    case 99.11 => "dfd"
+    case 89.22 => "kjkjjsd"
+  println(result2)
 
-  executeParam("Gopala",2)
-  matchers(32)
+  var temp2 = 34
+  var result4 = temp2 match
+    case 34   => "Integer"
+  println(result4)
+
+  //executeParam("Gopala",2)
+  //matchers(32)
 
   // Call the method and print the result
   val result = getClassAsString("Hello")
-  println(result) // This will print: 'Hello' is a String
+  //println(result) // This will print: 'Hello' is a String
+
+  //various data types
+  val x: Int = 1
+  val b: Byte = 1
+  val l: Long = 1
+  val s: Short = 1
+  //Double is used for extremeley large decimal points such as 10 pow 308 to 10 10 pow -324
+  val d: Double = 2.0
+  val f: Float = 3.0
+  var biggerInt = BigInt(1_234_567_890_987_654_321L)
+  var biggerDecimal = BigDecimal(123_456.789)
+  val num2s:List[Int] = List(1,2,3)
+  val num3s = List(1,2,3)
+
+  println(x)
+  println(num2s)
+  println(num3s)
+
+  try
+    val k32:Float = 2344.991
+    var temp35 = k32 * 2
+    temp35 = temp35 / 0
+    println(temp35)
+  catch
+    case ioe: IOException => println("Got an IOException.")
+    case nfe: NumberFormatException => println("Got a NumberFormatException.")
+    case _ => println("some exception")
+  finally
+    println("im here finally..")
+
+
 
 }
 def execute2():
@@ -94,8 +137,8 @@ Unit = {
 }
 
 def getClassAsString(x: Matchable): String = x match
-  case s: String => s"'$s' is a String"
-  case i: Int => "Int"
-  case d: Double => "Double"
-  case l: List[?] => "List"
+  case x: String => s"'$x' is a String"
+  case x: Int => "Int"
+  case x: Double => "Double"
+  case x: List[?] => "List"
   case _ => "Unknown"
