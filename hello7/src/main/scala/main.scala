@@ -1,5 +1,6 @@
 import scala.io.StdIn.readLine
 import java.io.IOException  // Import IOException
+import scala.util.control.Breaks._
 
 @main
 def execute():
@@ -111,6 +112,16 @@ Unit = {
     case _ => println("some exception")
   finally
     println("im here finally..")
+
+  var xer = 34
+
+  while
+    xer < 40
+  do
+    println(xer)
+    xer += 1
+
+
 
 
 
