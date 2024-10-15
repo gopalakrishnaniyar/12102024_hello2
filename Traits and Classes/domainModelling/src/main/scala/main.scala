@@ -31,6 +31,9 @@ def main(): Unit = {
   // instantiate class myclass2 an access method and direct class variable.
   var obj = myClass2("zun "," zoo")
   obj.myMethod()
+
+  // object classes are now mutable
+  obj.a1  = "string 45"
   println (obj.a1)
 
 }
