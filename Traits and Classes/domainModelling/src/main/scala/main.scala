@@ -41,7 +41,6 @@ def main(): Unit = {
     case small, medium, large
 
   var enumUse:pizzaSize = pizzaSize.large
-
   enumUse match
     case pizzaSize.medium => println("medium")
     case _ => println("var is not assigned for a enum case")
