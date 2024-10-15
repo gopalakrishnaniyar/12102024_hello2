@@ -36,5 +36,12 @@ def main(): Unit = {
   obj.a1  = "string 45"
   println (obj.a1)
 
+  // enumeration with case types
+  enum pizzaSize:
+    case small, medium, large
+
+  var enumUse:pizzaSize = pizzaSize.medium
+  enumUse match
+    case pizzaSize.medium => println("medium")
 }
 
