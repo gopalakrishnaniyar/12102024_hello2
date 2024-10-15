@@ -40,6 +40,7 @@ def main(): Unit = {
   enum pizzaSize:
     case small, medium, large
 
+
   var enumUse:pizzaSize = pizzaSize.large
   enumUse match
     case pizzaSize.medium => println("medium")
@@ -47,10 +48,5 @@ def main(): Unit = {
 
   enum enumTester:
     case x,y,z
-
-  import  enumTester.*
-    val localValue = x
-
-  localValue match
-    case x => println("printing x")
+  
 }
