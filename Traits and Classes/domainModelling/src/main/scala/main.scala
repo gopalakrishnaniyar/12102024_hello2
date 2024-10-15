@@ -44,5 +44,13 @@ def main(): Unit = {
   enumUse match
     case pizzaSize.medium => println("medium")
     case _ => println("var is not assigned for a enum case")
-}
 
+  enum enumTester:
+    case x,y,z
+
+  import  enumTester.*
+    val localValue = x
+
+  localValue match
+    case x => println("printing x")
+}
