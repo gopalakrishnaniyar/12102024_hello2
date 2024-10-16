@@ -48,5 +48,8 @@ def main(): Unit = {
 
   enum enumTester:
     case x,y,z
-  
+
+  // Creating class of type case
+
+
 }
