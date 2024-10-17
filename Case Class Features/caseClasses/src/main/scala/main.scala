@@ -20,5 +20,10 @@ def main(): Unit = {
   val valObj = obj2.copy(x = "lol")
   println(valObj.toString)
 
+
+  var myList = List(1,2,3,4)
+  for (item <- myList) do println(item)
+  val newList = for (item <- myList) yield item+2
+  println(newList)
 }
 
