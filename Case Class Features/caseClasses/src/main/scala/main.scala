@@ -11,7 +11,7 @@ case class caseClass(x:String)
 @main
 def main(): Unit = {
 
-  val obj1 = new normalClass("normal class")
+  val obj1 = new normalClass("normal. class")
   val obj2 = caseClass("inside case class.")
 
   println(obj1.x + obj1.temp1)
