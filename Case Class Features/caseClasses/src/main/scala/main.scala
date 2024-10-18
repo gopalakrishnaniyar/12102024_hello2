@@ -34,5 +34,12 @@ def main(): Unit = {
 
   val y = concatenate("1","2")
   println(y)
+
+  def defParamMethod(x:Int,y:Int=100):
+  Unit = {println(x+y)}
+
+  defParamMethod(100)
+  defParamMethod(100,300)
+
 }
 
