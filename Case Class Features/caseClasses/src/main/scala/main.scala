@@ -25,5 +25,14 @@ def main(): Unit = {
   for (item <- myList) do println(item)
   val newList = for (item <- myList) yield item+2
   println(newList)
+
+  def sum(a: Int, b: Int): Int = a + b
+  def concatenate(s1: String, s2: String): String = s1 + s2
+
+  val x = sum(1,2)
+  println(x)
+
+  val y = concatenate("1","2")
+  println(y)
 }
 
