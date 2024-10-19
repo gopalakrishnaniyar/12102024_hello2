@@ -41,5 +41,10 @@ def main(): Unit = {
   defParamMethod(100)
   defParamMethod(100,300)
 
+  def engage(bool1:Boolean,bool2:Boolean):
+    Unit  ={ println(" Boolean 1 is : " + bool1 + " Boolean 2 is : " + bool2) }
+
+  engage(bool1 = true, bool2 = false)
+
 }
 
