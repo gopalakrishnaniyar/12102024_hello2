@@ -29,5 +29,12 @@ def main(): Unit = {
   val newNumbers = numbes.filter(i => i % 2 == 0).filter(_ > 4).map(_ * 10)
   println(newNumbers)
 
+  val nums = (1 to 10).toList // List(1,2,3,4,5,6,7,8,9,10)
+
+  // methods can be chained together as needed
+  val x = nums.filter(_ > 3)
+    .filter(_ < 7)
+    .map(_ * 10)
+
 }
 
