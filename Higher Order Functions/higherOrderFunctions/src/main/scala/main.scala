@@ -1,5 +1,6 @@
 package org.HigherOrder.com
 
+
 @main
 def main(): Unit = {
   println("Hello world!")
@@ -35,6 +36,12 @@ def main(): Unit = {
   val x = nums.filter(_ > 3)
     .filter(_ < 7)
     .map(_ * 10)
+
+  object StringUtils:
+    def leftTrim(s: String): String = s.replaceAll("^\\s+", "")
+
+  val result = StringUtils.leftTrim("    hello, Scala!")
+  println(result) // Output: "hello, Scala!"
 
 }
 
