@@ -41,7 +41,7 @@ def main(): Unit = {
     def leftTrim(s: String): String = s.replaceAll("^\\s+", "")
     def rightTrim(s: String): String = s.replaceAll("\\s+$", "")
 
-  val result = StringUtils.leftTrim("    hello, Scala!")
+  val result = StringUtils.leftTrim("      hello, Scala!")
   val result2 = StringUtils.rightTrim("kk    ")
   println(result)
   println(result2) // Output: "hello, Scala!"
