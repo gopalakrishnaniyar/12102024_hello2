@@ -1,5 +1,5 @@
 package org.HigherOrder.com
-
+import scala.math.*
 
 @main
 def main(): Unit = {
@@ -46,5 +46,19 @@ def main(): Unit = {
   println(result)
   println(result2) // Output: "hello, Scala!"
 
+  val circle1 = Circle(5.0)
+  println(circle1.area)
+
 }
+
+class Circle(radius: Double):
+  import Circle.*
+  def area: Double = calculateArea(radius)
+
+object Circle:
+  private def calculateArea(radius: Double): Double =
+    Pi * pow(radius, 2.0)
+
+
+
 
