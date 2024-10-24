@@ -17,8 +17,10 @@ def main(): Unit = {
 
   val myList = List(10, 20, 30, 40, 10)
   println(myList)
-  myList.drop(0)
-  println(myList)
+  var newRevampList = myList.drop(1)
+  println(newRevampList)
+  newRevampList = newRevampList.filter(_ < 25)
+  println(newRevampList)
 
 }
 
