@@ -23,5 +23,7 @@ def main(): Unit = {
   println(newRevampList)
   newRevampList = newRevampList.dropWhile(_ < 25)
   println(newRevampList)
+  newRevampList = newRevampList.takeWhile(_ >= 30)
+  println(newRevampList)
 }
 
