@@ -14,5 +14,11 @@ def main(): Unit = {
   println(d)
   println(f)
   println(g)
+
+  val myList = List(10, 20, 30, 40, 10)
+  println(myList)
+  myList.drop(0)
+  println(myList)
+
 }
 
