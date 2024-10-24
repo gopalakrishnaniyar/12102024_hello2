@@ -19,8 +19,9 @@ def main(): Unit = {
   println(myList)
   var newRevampList = myList.drop(1)
   println(newRevampList)
-  newRevampList = newRevampList.filter(_ < 25)
+  newRevampList = newRevampList.filter(_ < 100)
   println(newRevampList)
-
+  newRevampList = newRevampList.dropWhile(_ < 25)
+  println(newRevampList)
 }
 
