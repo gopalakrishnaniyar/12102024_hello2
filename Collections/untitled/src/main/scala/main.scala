@@ -30,5 +30,8 @@ def main(): Unit = {
 
   // dropwhile and takewhile always starts from left most element
 
+  val a3 = List(List(34, 2), List(3, 4))
+  println(a3.flatten.sorted)
+
 }
 
