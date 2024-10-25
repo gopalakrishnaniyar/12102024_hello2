@@ -25,6 +25,8 @@ def main(): Unit = {
   println(newRevampList)
   newRevampList = newRevampList.takeWhile(_ >= 30)
   println(newRevampList)
+  newRevampList = newRevampList.take(1)
+  println(newRevampList)
 
   // dropwhile and takewhile always starts from left most element
 
