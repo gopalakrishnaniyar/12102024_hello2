@@ -27,11 +27,13 @@ def main(): Unit = {
   println(newRevampList)
   newRevampList = newRevampList.take(1)
   println(newRevampList)
+  val newlist1 = List(1,2,3,4,5,6)
+  println(newlist1.slice(2,5))
 
   // dropwhile and takewhile always starts from left most element
 
   val a3 = List(List(34, 2), List(3, 4))
-  println(a3.flatten.sorted) 
+  println(a3.flatten.sorted)
 
 }
 
