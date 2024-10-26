@@ -41,7 +41,9 @@ def main(): Unit = {
   println(newlist1.tail)
   //not assummed as lat element, but all elements except the first one.
   // list are immutable
-
+  //
+  var copyList = newlist1
+  println(copyList)
 
 }
 
