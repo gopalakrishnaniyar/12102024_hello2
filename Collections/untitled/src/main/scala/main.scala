@@ -39,6 +39,8 @@ def main(): Unit = {
   println(newlist1.slice(2,5))
   println(newlist1.head)
   println(newlist1.tail)
+  //not assummed as lat element, but all elements except the first one.
+  // list are immutable
 
 
 }
