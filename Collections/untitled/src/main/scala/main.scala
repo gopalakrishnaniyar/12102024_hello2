@@ -27,6 +27,7 @@ def main(): Unit = {
   println(newRevampList)
   newRevampList = newRevampList.take(1)
   println(newRevampList)
+  // New Slice last position -1..
   val newlist1 = List(1,2,3,4,5,6)
   println(newlist1.slice(2,5))
 
