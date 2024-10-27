@@ -36,14 +36,18 @@ def main(): Unit = {
 
   // New Slice last position -1..
   val newlist1 = List(1,2,3,4,5,6)
+
+  var copyList = newlist1
+  println(copyList)
+
   println(newlist1.slice(2,5))
+  println(newlist1)
   println(newlist1.head)
   println(newlist1.tail)
   //not assummed as lat element, but all elements except the first one.
   // list are immutable
   //
-  var copyList = newlist1
-  println(copyList)
+
 
 }
 
