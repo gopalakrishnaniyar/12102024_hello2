@@ -50,7 +50,7 @@ def main(): Unit = {
 
   val nums = List("one", "two")
   println(nums.map(_.toUpperCase)) // List("ONE", "TWO")
-  println(nums.flatMap(_.toUpperCase))
+  println(nums.flatMap(_.toUpperCase).map(_ + "1"))
 
 
 }
