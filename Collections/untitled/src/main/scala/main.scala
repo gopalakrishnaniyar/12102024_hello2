@@ -48,6 +48,10 @@ def main(): Unit = {
   // list are immutable
   //
 
+  val nums = List("one", "two")
+  println(nums.map(_.toUpperCase)) // List("ONE", "TWO")
+  println(nums.flatMap(_.toUpperCase))
+
 
 }
 
