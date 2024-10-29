@@ -53,7 +53,8 @@ def main(): Unit = {
   println(nums.flatMap(_.toUpperCase).map(_ + "1"))
 
   val myLister = (1 to 10).toList
-  println(myLister)
+  val sum = myLister.foldLeft(0)(_ + _)
+  println(sum)
 
 
 }
