@@ -52,6 +52,9 @@ def main(): Unit = {
   println(nums.map(_.toUpperCase)) // List("ONE", "TWO")
   println(nums.flatMap(_.toUpperCase).map(_ + "1"))
 
+  val myLister = (1 to 10).toList
+  println(myLister)
+
 
 }
 
