@@ -54,8 +54,8 @@ def main(): Unit = {
 
   val myLister = (1 to 10).toList
   val sum = myLister.foldLeft(100)(_ + _)
-  val sumOfEven = myLister.foldLeft(0)((cnt,num) => if num % 2 == 0 then cnt + 1 else cnt)
   println(sum)
+  val sumOfEven = myLister.foldLeft(0)((cnt, num) => if num % 2 == 0 then cnt + 1 else cnt)
   println(sumOfEven)
 
   // important to note then cnt is the initial seed value, ie initilized to 0 hence its of type Int
