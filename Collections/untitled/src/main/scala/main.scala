@@ -59,10 +59,10 @@ def main(): Unit = {
   println(sumOfEven)
   val sum1 = myLister.reduceLeft((a, b) => a + b)
 
-  val myLister1 = (1 to 3).toList
-  val sum2 = myLister1.reduceLeft((x,y) => x+1)
+  val myLister1 = (1 to 4).toList
+  val sum2 = myLister1.reduceLeft((x,y) => x+y)
   println(sum1)
-  println(sum1)
+  println(sum2)
 
   // important to note then cnt is the initial seed value, ie initilized to 0 hence its of type Int
   // whereas the num is the each elemtn returned from the collection.
