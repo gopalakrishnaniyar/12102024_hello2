@@ -63,7 +63,6 @@ def main(): Unit = {
   println(sumOfEven)
   val sum1 = myLister.reduceLeft((a, b) => a + b)
 
-
   // important to note then cnt is the initial seed value, ie initilized to 0 hence its of type Int
   // whereas the num is the each elemtn returned from the collection.
 
