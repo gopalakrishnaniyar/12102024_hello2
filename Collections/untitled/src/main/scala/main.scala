@@ -64,7 +64,7 @@ def main(): Unit = {
 
   val myLister32 = (1 to 10).toList
   println(myLister32)
-  println("Fold Left: " + myLister32.foldLeft(0)(_ + _))
+  println("Fold Left: " + myLister32.foldLeft(0)((a, b) => a + b))
   println("Reduce Left: " + myLister32.reduceLeft((a, b) => a + b))
   // important to note then cnt is the initial seed value, ie initilized to 0 hence its of type Int
   // whereas the num is the each elemtn returned from the collection.
