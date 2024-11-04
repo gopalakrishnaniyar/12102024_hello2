@@ -64,16 +64,10 @@ def main(): Unit = {
 
   val myLister32 = (1 to 10).toList
   println(myLister32)
-  val sum1 = myLister32.reduceLeft((a, b) => a + b)
-  println(sum1)
+  println("Fold Left: " + myLister32.foldLeft(0)(_ + _))
+  println("Reduce Left: " + myLister32.reduceLeft((a, b) => a + b))
   // important to note then cnt is the initial seed value, ie initilized to 0 hence its of type Int
   // whereas the num is the each elemtn returned from the collection.
-
-  val myNewList = List(1,2,3,4,5,6,7)
-  println(myNewList)
-
-
-
 
 }
 
