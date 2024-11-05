@@ -68,7 +68,7 @@ def main(): Unit = {
   println("Reduce Left: " + myLister32.reduceLeft((a, b) => a + b))
 
 
-  // fold left does a seed value
+  // fold left has a seed value
   // reduce left, first element in left is always the seed value
 
 }
