@@ -9,7 +9,7 @@ def main(): Unit = {
   println("Reduce Left: " + myLister32.reduceLeft((a, b) => a + b))
 
   val myTuple = (8,myLister32, "12", 6.5)
-  println(myTuple(0))
+  println(myTuple._1)
 
 
 }
