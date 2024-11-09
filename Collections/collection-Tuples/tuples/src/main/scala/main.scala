@@ -10,6 +10,7 @@ def main(): Unit = {
 
   val myTuple = (8,myLister32, "12", 6.5)
   println(myTuple._1)
+  println(myTuple)
 
 
 }
