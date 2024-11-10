@@ -11,8 +11,7 @@ def main(): Unit = {
   val myTuple = (8,myLister32, "12", 6.5)
   println(myTuple._1)
   println(myTuple)
-  //my tuple is useles.. let me try another collection
-
+  //my tuple is useles.. let me try another collection..
 
 }
 
