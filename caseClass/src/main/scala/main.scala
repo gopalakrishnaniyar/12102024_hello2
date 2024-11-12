@@ -9,7 +9,8 @@ def main(): Unit = {
   println(sortedAddress)
   sortedAddress.foreach(println)
 
-  val person1 = Person("Alice",30)
+  val person1 = Person("Alice",40)
+  val person2 = Person("Alice",40)
   println(person1.name)
 }
 
