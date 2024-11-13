@@ -7,6 +7,6 @@ def main(): Unit = {
 
 def myMethod(a:Any):
 Unit = {
-  println("hello from mymethod")
+  println("hello from mymethod.")
 }
 
