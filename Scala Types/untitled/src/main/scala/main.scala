@@ -15,6 +15,6 @@ Unit = {
 
 def myMethod2(a:Int):
 Unit = {
-  println("hello from mymethod2." + a )
+  println("hello from mymethod2" + a )
 }
 
