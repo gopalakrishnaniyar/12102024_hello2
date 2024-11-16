@@ -5,7 +5,7 @@ def main(): Unit = {
   myMethod("j")
   myMethod(66.34)
   myMethod("66.34")
-  myMethod2(557)
+  myMethod2(557.2)
 }
 
 def myMethod(a:Any):
