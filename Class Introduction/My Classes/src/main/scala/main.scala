@@ -1,7 +1,10 @@
 class myClass1(var i: String,var j:Int)
 {
   def myMethod(): Unit={ println("testing..." + i) }
-  def myMethod2(): Int={  j+10 }
+  def myMethod2(): Int={
+    val num1 = scala.io.StdIn.readLine().toInt
+    j+num1
+  }
 }
 // no need of return keyword. just grab the arg from class param and use it inside method
 @main
