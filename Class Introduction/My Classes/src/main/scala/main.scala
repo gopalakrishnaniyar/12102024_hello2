@@ -13,7 +13,14 @@ def main(): Unit = {
   println(myList.toList) // Output: ListBuffer(1, 2, 3, 4, 5)
 
   val myList1 = List.empty[Int]
+  val myList2 = List.empty[Int]
   val myListBuff1 = ListBuffer.empty[Int]
+
+  val newList  = myList1 :+ 1 :+4
+  val newList2 = 43 :: newList
+
+  println(newList)
+  println(newList2)
 
 }
 
