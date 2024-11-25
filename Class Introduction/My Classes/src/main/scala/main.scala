@@ -10,6 +10,10 @@ def main(): Unit = {
   print(test.mkString("Array(", ", ", ")"))
   myArr.foreach(myList += _)
 
-  println(myList) // Output: ListBuffer(1, 2, 3, 4, 5)
+  println(myList.toList) // Output: ListBuffer(1, 2, 3, 4, 5)
+
+  val myList1 = List.empty[Int]
+  val myListBuff1 = ListBuffer.empty[Int]
+
 }
 
