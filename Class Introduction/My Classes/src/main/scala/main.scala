@@ -1,11 +1,15 @@
+import scala.collection.mutable.ListBuffer
 
-object solution{
-  println("object classes")
-}
-
-// no need of return keyword. just grab the arg from class param and use it inside method
 @main
 def main(): Unit = {
-  println(solution.toString)
+  val myArr = Array(1, 2, 3, 4, 5)
+  val myList = ListBuffer.empty[Int]
+
+  myArr.foreach(println(_))
+  val test = myArr.filter(_>3)
+  print(test.mkString("Array(", ", ", ")"))
+  myArr.foreach(myList += _)
+
+  println(myList) // Output: ListBuffer(1, 2, 3, 4, 5)
 }
 
