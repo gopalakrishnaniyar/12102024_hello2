@@ -18,7 +18,6 @@ def main(): Unit = {
 
   val newList  = myList1 :+ 1 :+4
   val newList2 = 43 :: newList
-
   println(newList)
   println(newList2)
 
