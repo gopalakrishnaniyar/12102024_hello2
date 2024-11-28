@@ -3,7 +3,6 @@ object RectangleCalculator {
   def calculateArea(length: Double, width: Double): Double = {
     length * width
   }
-
   // Main method
   def main(args: Array[String]): Unit = {
     println("Enter the length of the rectangle:")
