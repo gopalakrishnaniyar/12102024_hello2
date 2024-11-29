@@ -7,10 +7,8 @@ object RectangleCalculator {
   def main(args: Array[String]): Unit = {
     println("Enter the length of the rectangle:")
     val length = scala.io.StdIn.readDouble()
-
     println("Enter the width of the rectangle:")
     val width = scala.io.StdIn.readDouble()
-
     val area = calculateArea(length, width)
     println(s"The area of the rectangle is: $area")
   }
