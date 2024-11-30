@@ -10,6 +10,9 @@ object RectangleCalculator {
     println("Enter the width of the rectangle:")
     val width = scala.io.StdIn.readDouble()
     val area = calculateArea(length, width)
+    val temps = "Miia"
     println(s"The area of the rectangle is: $area")
+    val temp44 = List("1","2","23","4")
+    println(temp44)
   }
 }
