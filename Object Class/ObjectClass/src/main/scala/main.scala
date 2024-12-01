@@ -5,14 +5,8 @@ object RectangleCalculator {
   }
   // Main method
   def main(args: Array[String]): Unit = {
-    println("Enter the length of the rectangle:")
-    val length = scala.io.StdIn.readDouble()
-    println("Enter the width of the rectangle:")
-    val width = scala.io.StdIn.readDouble()
-    val area = calculateArea(length, width)
-    val temps = "Miia"
-    println(s"The area of the rectangle is: $area")
     val temp44 = List("1","2","23","4")
-    println(temp44)
+    val result = temp44.filter(item => if (item == "23") true else false )
+    println(result)
   }
 }
