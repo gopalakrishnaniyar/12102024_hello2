@@ -1,6 +1,6 @@
 @main def helloScala():
 Unit = {
-  println("Hello, Scala! using annotated main function.")
+  println("Hello, Scala! using annotated main function..")
 }
 
 /* Without using main annotation
