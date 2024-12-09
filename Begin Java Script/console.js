@@ -1,1 +1,1 @@
-console.log('1')
+console.log('my first java script')
