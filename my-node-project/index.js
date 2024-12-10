@@ -14,4 +14,8 @@ const filter = arrayNumbers.filter(item => item > 3)
 console.log(squared)
 console.log(filter)
 
+const arrayOfObjects = [{id:1,name:'gopu'},{id:2,name:'vijayan'},{id:3,name:'shree'}]
+const names = arrayOfObjects.filter(item => item.name.length >= 5)
+console.log(arrayOfObjects)
+console.log(names)
 
