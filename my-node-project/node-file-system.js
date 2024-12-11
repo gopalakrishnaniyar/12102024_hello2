@@ -16,5 +16,7 @@ const jpayload = fs.readFile('C:/Users/sivakgop/OneDrive - Tietoevry/Desktop/mes
   console.log(jpayload)
 
   // this will not work as it processes asynchronously.  jpayload cannot be referenced before it fully executes
-  // to process it
+  // to process it asynchronously such as a traditional OOP C++ etc
+
+  
 
