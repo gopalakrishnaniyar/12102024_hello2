@@ -1,22 +1,20 @@
-console.log('learning about file sytem')
-const fs = require('fs')
 
+const fs = require('fs/promises');
 
-//Writing contents into a file
+async function readMyJSONFile() {
+  try {
+    // Await the file read operation to get the content
+    const payload = await fs.readFile('C:/Users/sivakgop/OneDrive - Tietoevry/Desktop/message.txt', 'utf8');
+    return JSON.parse(payload); // Parse the content as JSON
+  } catch (err) {
+    console.error('Something fishy happened: ', err);
+  }
+}
 
-/*fs.writeFile('C:/Users/sivakgop/OneDrive - Tietoevry/Desktop/message.txt', 'hello', (err) => {
-  if (err) throw err;
-  console.log('The file has been saved!');
-});*/
-
-const jpayload = fs.readFile('C:/Users/sivakgop/OneDrive - Tietoevry/Desktop/message.txt', 'utf8', (err,data) => {
-    if (err) throw err;
-  });
-
-  console.log(jpayload)
-
-  // this will not work as it processes asynchronously.  jpayload cannot be referenced before it fully executes
-  // to process it asynchronously such as a traditional OOP C++ etc
-
-  
-
+(async function main() 
+{
+  const fileContent = await readMyJSONFile(); // Wait for the file to be read
+  if (fileContent) {
+    console.log(fileContent); // Access fileContent.data at the top level
+  }
+})();
