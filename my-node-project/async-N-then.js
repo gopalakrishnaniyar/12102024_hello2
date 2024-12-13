@@ -1,13 +1,13 @@
-const { json } = require("express");
 
 async function fetchData() {
     try {
         const resp = await fetch('https://api.publicapis.org/entries');
-        console.log(resp.status);
+        Promise.resolve(resp);
+        console.log(Promise.allSettled());
     }
-    catch (e) { console.error(e) }
+    catch (e) { console.log('error in fetching') }
 }
-const test = fetchData();
-console.log('test date: ' + test)
 
-fetch('https://api.publicapis.org/entries').then(response => console.log('then function: ' + response.status)); 
+fetchData();
+
+
