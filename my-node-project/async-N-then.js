@@ -7,7 +7,6 @@ async function fetchData() {
     }
     catch (e) { console.error(e) }
 }
-
 const test = fetchData();
 console.log('test date: ' + test)
 
