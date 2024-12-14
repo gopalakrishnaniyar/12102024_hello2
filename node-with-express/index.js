@@ -1,7 +1,7 @@
 mongoose.connect('mongodb://MongoDB:MongoDB@localhost:27017/sundalMaama', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
-        
+    
         // Access the 'users' collection inside 'sundalMaama'
         mongoose.connection.db.collection('users')
             .find({})
