@@ -1,4 +1,6 @@
-mongoose.connect('mongodb://MongoDB:MongoDB@localhost:27017/sundalMaama', { useNewUrlParser: true, useUnifiedTopology: true })
+/* mongodb://MongoDB:MongoDB@localhost:27017/sundalMaama */
+
+mongoose.connect('mongodb+srv://gopalakrishnaniyar:YxGxV123!@#@sundalmaama.rypqq.mongodb.net/?retryWrites=true&w=majority&appName=sundalMaama', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
     
