@@ -32,16 +32,19 @@ async function listDatabase() {
 }
 
 async function main() {
-  try {
+  try 
+  {
     await client.connect(); // Establish connection once
     console.log("Connected to MongoDB");
 
     // Run operations sequentially
     await run();
     await listDatabase();
-  } catch (err) {
+  } catch (err) 
+  {
     console.error("Error in main():", err);
-  } finally {
+  } finally 
+  {
     await client.close(); // Close the connection
     console.log("Connection to MongoDB closed.");
   }
