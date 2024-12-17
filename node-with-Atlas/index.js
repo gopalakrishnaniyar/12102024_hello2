@@ -1,4 +1,5 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
+//interesting it uses TLS/SSL
 const uri = "mongodb+srv://gopalakrishnaniyar:Password123@sundalmaama.rypqq.mongodb.net/?retryWrites=true&w=majority&appName=sundalMaama";
 
 // Create a single MongoClient instance
