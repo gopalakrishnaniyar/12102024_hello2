@@ -1,4 +1,4 @@
-function countingValleys(steps, path) 
+    function countingValleys(steps, path) 
 {
     var valleyCounter = 0;
     var baseLevel = 0;
