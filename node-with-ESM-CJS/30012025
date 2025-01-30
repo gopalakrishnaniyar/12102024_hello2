@@ -1,0 +1,9 @@
+//Holy cow, new Date() refers to same date object
+// converting date , microwins for next hackerrank
+const temp = new Date();
+const tempPlusFive = new Date();
+tempPlusFive.setDate(tempPlusFive.getDate() + 1)
+console.log(temp);
+console.log(tempPlusFive);
+console.log((tempPlusFive - temp) / (1000 * 60 * 60 * 24));
+
